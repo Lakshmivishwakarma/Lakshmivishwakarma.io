@@ -8,10 +8,10 @@
       "city": "Pune",
       "pincode": 411017
     },
-    "phoneNo": "9752083903",
+    "phoneNo": "+919752083903",
     "email": "lvlaxmi.1995@gmail.com",
     "objective": "I am looking for an entry-level position in the field of Information technology. I have worked for around 4 years in Banking Sector. I am versed in the field of technology. I aspire to be a web developer. I am a quick learner and hence I am confident enough to adapt and grow in this sector.",
-    "experience": [
+    "experiences": [
       {
         "organizationName": "AXIS Bank Ltd",
         "designation": "Service Relationship Officer",
@@ -76,6 +76,7 @@
         },
         "courseURL": "HTTT",
         "location": "Bhopal;"
+        
       }
     ],
     "projects": [
@@ -158,11 +159,11 @@
       }
     ],
     "awards": [
-      "\"B\" certificate issued by NSS ( National service scheme )",
+      "\"B\" certificate issued by NSS (National service scheme)",
       "Participated in NSS State camp during graduation",
       "Participated in National camp during graduation"
     ],
-    "Languages": [
+    "languages": [
       "English",
       "Hindi",
       "Marathi"
