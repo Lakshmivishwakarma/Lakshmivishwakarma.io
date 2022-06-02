@@ -1,0 +1,31 @@
+
+#header {
+    text-align: justify;
+    color: white;
+    background-color:rgb(8, 29, 70);
+}
+
+#details{
+    background-color:rgb(25, 39, 61);
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+
+}
+.font-white{
+    color: white;
+
+}
+.design{
+    text-decoration: underline;
+    color: rgb(51, 51, 143);
+    margin-top: 20px;
+}
+.info{
+    margin-right: 300px;
+    margin-left: 10px;
+}
+#photo{
+  border-radius: 500px;
+}
