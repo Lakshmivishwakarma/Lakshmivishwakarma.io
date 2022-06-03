@@ -1,4 +1,11 @@
 
+function formatDate(date) {
+    const d = new Date(date);
+    return d.toLocaleString('en-US', {
+        year: 'numeric',
+        month: 'short',
+    });
+}
 function insertData(data) {
     console.log(data);
     console.log($("#personName"));
@@ -68,7 +75,7 @@ function insertData(data) {
         nameh5.append(exp.organizationName);
 
         let tenureP = document.createElement("p")
-        tenureP.append(exp.tenure.from + " to " + exp.tenure.to);
+        tenureP.append(formatDate(exp.tenure.from) + " - " + formatDate(exp.tenure.to));
 
         let roleP = document.createElement("p");
         roleP.append(exp.role);
@@ -83,12 +90,10 @@ function insertData(data) {
         let edu = data.education[index];
         let div = document.createElement("div");
         let instituteLocation = document.createElement("h5");
-        instituteLocation.append(edu.instituteName + " ," + edu.location);
-        let tenureP = document.createElement("h6");
-        tenureP.append(edu.tenure.from + " to " + edu.tenure.to);
-        let course = document.createElement("p");
-        course.append(edu.courseName);
-        div.append(instituteLocation, tenureP, course);
+        instituteLocation.append(edu.courseName + " - " + edu.instituteName + ", " + edu.location);
+        let tenureP = document.createElement("p");
+        tenureP.append(formatDate(edu.tenure.from) + " - " +formatDate(edu.tenure.to));
+        div.append(instituteLocation, tenureP);
         $("#education").append(div);
         console.log(div);
 

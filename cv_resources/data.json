@@ -65,7 +65,7 @@
           "to": "2019-07-01"
         },
         "courseURL": "HTTT",
-        "location": "Bhopal;"
+        "location": "Bhopal"
       },
       {
         "instituteName": "Sarojini Naidu Govt Girls PG College",
@@ -75,7 +75,7 @@
           "to": "2016-07-18"
         },
         "courseURL": "HTTT",
-        "location": "Bhopal;"
+        "location": "Bhopal"
         
       }
     ],
@@ -106,7 +106,7 @@
           "Bootstrap"
         ],
         "features": [
-          "Responsive Pages using Bootstrap 3.0"
+          "Responsive Pages using Bootstrap 3.0", "Single Page Application using Vanilla JS"
         ]
       },
       {
@@ -134,7 +134,7 @@
           "Bootstrap"
         ],
         "liveURL": "HTTP",
-        "features": []
+        "features": ["Simple app to demonstrate CRUD"]
       }
     ],
     "skills": [
