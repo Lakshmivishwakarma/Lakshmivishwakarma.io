@@ -13,7 +13,7 @@ function insertData(data) {
     $("#objective").text(data.objective);
     $("#email").text(data.email);
     $("#mobile").text(data.phoneNo);
-    $("#location").text(data.address.city);
+    $("#location").text(data.city);
     $()
 
     // adding skills by array
@@ -112,9 +112,11 @@ function insertData(data) {
         let a= document.createElement("a");
         a.append(project.name);
         // append name to a
+        // 
         if(project.liveURL){
             a.setAttribute("href",project.liveURL );
             a.setAttribute("target", "_blank" );// sma for target, _blank
+
         }
         
 
@@ -135,6 +137,7 @@ function insertData(data) {
             li.append(elm);
             ul.append(li);
         }
+        console.log(ul);
 
         div.append(projectTitle, technologies, features, ul);
 
