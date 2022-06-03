@@ -107,8 +107,18 @@ function insertData(data) {
 
         let div = document.createElement("div");
 
-        let schoolMgmt = document.createElement("h5");
-        schoolMgmt.append(project.name);
+        let projectTitle = document.createElement("h5");
+        //create a tag 
+        let a= document.createElement("a");
+        a.append(project.name);
+        // append name to a
+        if(project.liveURL){
+            a.setAttribute("href",project.liveURL );
+            a.setAttribute("target", "_blank" );// sma for target, _blank
+        }
+        
+
+        projectTitle.append(a); // append a tag
 
         let technologies = document.createElement("p");
         technologies.append(project.technologies.join(", "));
@@ -125,9 +135,8 @@ function insertData(data) {
             li.append(elm);
             ul.append(li);
         }
-        console.log(ul);
 
-        div.append(schoolMgmt, technologies, features, ul);
+        div.append(projectTitle, technologies, features, ul);
 
         $("#projectsDiv").append(div);
 

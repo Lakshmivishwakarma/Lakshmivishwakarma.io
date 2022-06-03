@@ -82,8 +82,8 @@
     "projects": [
       {
         "name": "School Management",
-        "sourceCodeUrl": "HTTP",
-        "liveURL": "HTTP",
+        "sourceCodeUrl": "",
+        "liveURL": "",
         "technologies": [
           "VB .Net",
           "MS Acess"
@@ -96,8 +96,8 @@
       },
       {
         "name": "Restaurant Website",
-        "sourceCodeUrl": "HTTP",
-        "liveURL": "HTTP",
+        "sourceCodeUrl": "https://github.com/Lakshmivishwakarma/coursera-assignments/tree/main/restaurant",
+        "liveURL": "https://lakshmivishwakarma.github.io/Lakshmivishwakarma.io/restaurant/index.html",
         "technologies": [
           "Javascript",
           "HTML",
@@ -111,8 +111,8 @@
       },
       {
         "name": "Responsive Resume",
-        "sourceCodeUrl": "HTTP",
-        "liveURL": "HTTP",
+        "sourceCodeUrl": "https://github.com/Lakshmivishwakarma/Lakshmivishwakarma.io",
+        "liveURL": "https://lakshmivishwakarma.github.io/Lakshmivishwakarma.io/",
         "technologies": [
           "Javascript",
           "HTML",
@@ -126,14 +126,14 @@
       },
       {
         "name": "To Do App",
-        "sourceCodeUrl": "HTTP",
+        "sourceCodeUrl": "",
         "technologies": [
           "Javascript",
           "HTML",
           "JSON",
           "Bootstrap"
         ],
-        "liveURL": "HTTP",
+        "liveURL": "",
         "features": ["Simple app to demonstrate CRUD"]
       }
     ],
