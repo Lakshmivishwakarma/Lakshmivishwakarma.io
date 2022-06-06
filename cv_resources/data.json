@@ -9,9 +9,11 @@
       "pincode": 411017
     },
     "phoneNo": "+919752083903",
-    "email": " lvlaxmi.1995@gmail.com",
-    "city": " Pune",
-    "objective": "I am looking for an entry-level position in the field of Information technology. I have worked for around 4 years in Banking Sector. I am versed in the field of technology. I aspire to be a web developer. I am a quick learner and hence I am confident enough to adapt and grow in this sector.",
+    "email": "lvlaxmi.1995@gmail.com",
+    "city": "Pune",
+    "github": "https://github.com/Lakshmivishwakarma",
+    "linkedin": "https://www.linkedin.com/in/lakshmiv11",
+    "objective": "I am looking for an entry-level position in the field of Information technology. I have worked for around 4 years in Banking Sector. I aspire to be a web developer. I am a quick learner and hence I am confident enough to adapt and grow in this sector.",
     "experiences": [
       {
         "organizationName": "AXIS Bank Ltd",
@@ -124,18 +126,6 @@
         "features": [
           "Responsive Resume "
         ]
-      },
-      {
-        "name": "To Do App",
-        "sourceCodeUrl": "",
-        "technologies": [
-          "Javascript",
-          "HTML",
-          "JSON",
-          "Bootstrap"
-        ],
-        "liveURL": "",
-        "features": ["Simple app to demonstrate CRUD"]
       }
     ],
     "skills": [
