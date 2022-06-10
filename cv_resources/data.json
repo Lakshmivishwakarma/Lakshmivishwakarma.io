@@ -84,20 +84,6 @@
     ],
     "projects": [
       {
-        "name": "School Management",
-        "sourceCodeUrl": "",
-        "liveURL": "",
-        "technologies": [
-          "VB .Net",
-          "MS Acess"
-        ],
-        "features": [
-          "Admission registration",
-          "Course Selection",
-          "Fee Structure"
-        ]
-      },
-      {
         "name": "Restaurant Website",
         "sourceCodeUrl": "https://github.com/Lakshmivishwakarma/coursera-assignments/tree/main/restaurant",
         "liveURL": "https://lakshmivishwakarma.github.io/Lakshmivishwakarma.io/restaurant/index.html",
@@ -125,6 +111,20 @@
         ],
         "features": [
           "Responsive Resume "
+        ]
+      },
+      {
+        "name": "School Management",
+        "sourceCodeUrl": "",
+        "liveURL": "",
+        "technologies": [
+          "VB .Net",
+          "MS Acess"
+        ],
+        "features": [
+          "Admission registration",
+          "Course Selection",
+          "Fee Structure"
         ]
       }
     ],

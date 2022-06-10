@@ -23,7 +23,7 @@ function insertData(data) {
 
     let githubLink = document.createElement("a");
     githubLink.append(" " + getUserNameFromURL(data.github));
-    
+
     githubLink.setAttribute("href", data.github);
     githubLink.setAttribute("target", "_blank");// sma for target, _blank
     githubLink.style.color = "#fff";
@@ -104,13 +104,13 @@ function insertData(data) {
     for (let index = 0; index < data.education.length; index++) {
         let edu = data.education[index];
         let div = document.createElement("div");
-        
+
         let instituteLocation = document.createElement("h5");
         instituteLocation.append(edu.courseName + " - " + edu.instituteName + ", " + edu.location);
-        
+
         let tenureP = document.createElement("p");
         tenureP.append(formatDate(edu.tenure.from) + " - " + formatDate(edu.tenure.to));
-        
+
         div.append(instituteLocation, tenureP);
         $("#education").append(div);
     }
@@ -136,25 +136,33 @@ function insertData(data) {
         }
 
         projectTitle.append(a); // append a tag
-        
+
         let technologies = document.createElement("p");
         technologies.append(project.technologies.join(", "));
-        
+
+        let sourceCodeURL = document.createElement("pre");
+        let codeLink = document.createElement("a");
+        codeLink.setAttribute("href", project.sourceCodeUrl);
+        codeLink.setAttribute("target", "_blank");// sma for target, _blank
+        codeLink.append(project.sourceCodeUrl);
+        sourceCodeURL.append("Source Code: ");
+        sourceCodeURL.append(codeLink);
+
         let features = document.createElement("h6");
         features.append('Features');
-        
+
         ul = document.createElement("ul");
-        
+
         const feature = project.features;
-        
+
         for (let index = 0; index < feature.length; index++) {
             const elm = feature[index];
             const li = document.createElement("li");
             li.append(elm);
             ul.append(li);
         }
-        
-        div.append(projectTitle, technologies, features, ul);
+
+        div.append(projectTitle, technologies, sourceCodeURL , features, ul);
         $("#projectsDiv").append(div);
     }
 }
