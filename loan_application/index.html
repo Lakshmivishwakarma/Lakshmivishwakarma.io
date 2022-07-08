@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Loan Application</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+
+
+</head>
+
+<body>
+    <div>
+        <div id="application">
+            Loan Application
+        </div>
+    </div>
+    <form  name="stud_form" id="form" action="./thank_you.html" onsubmit="return validateForm()" method="get">
+    
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <br><span id="namee"></span>
+        
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br><br>
+        <br><span id="emaill"></span>
+
+        <label for="pan">PAN Number:</label>
+        <input type="text" id="pan" name="pan"><br><br>
+        <br><span id="pann"></span>
+
+        <label for="pan">Loan Amount:</label>
+        <input type="number" id="loan_amount"name="loan_amount"><br><br>
+        <br><span id="loan_amountt"></span>
+
+        <div id="captcha">  
+            <label for="captcha">captcha:</label>
+            <span id="firstNumber">5</span>+<span id="secondNumber">3</span>
+            <input type="text" id="captchaAnswer">
+        
+        </div> 
+
+        <input type="submit" value="Submit"><br />
+        
+        
+    </form>
+    <script src='script.js'></script>
+
+</body>
+
+</html>

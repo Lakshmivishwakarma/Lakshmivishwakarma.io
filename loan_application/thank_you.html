@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <title>Loan Application</title>
+  </head>
+  <body>
+    <h1>THANK YOU</h1>
+    <p>Dear <span id="firstName"></span></p>
+    <p>
+      Thank you for your inquiry. A 4 digit verification number has been sent to
+      your email: <span id="email"></span>
+    </p>
+    <p>Please enter it in the following box and submit for confirmation.</p>
+
+    <input type="number" id="user_otp" name="user_otp" />
+    <button type="button" onclick="validateOTP()">Validate</button><br />
+    <script src="thank_you.js"></script>
+
+  </body>
+</html>
