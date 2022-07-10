@@ -1,13 +1,37 @@
-#application{
-    background-color: aqua;
-    text-align: center;
-    height: 50px;
-    
-
+body{
+    background-color:rgba(85, 84, 165, 0.356);
+    font-family: monospace;
+    font-size: x-large;
 }
-
+#application{
+    background-color:rgb(97, 176, 179);
+    text-align: center;
+    height: 50px;padding:10px;
+}
 #captcha{
     background-color: antiquewhite;
     height: 50px;
-    width:250px;
+    width:450px;
+}
+#main_content{
+    background-color: white;
+    height: 500px;
+    width:700px;
+    padding:10px;
+    margin: 10px;
+}
+#submitButton{
+    background-color:rgb(97, 176, 179);
+    height:30px;
+    width:70px;
+}
+#validateOtp{
+background-color:rgb(97, 176, 179);
+}
+#thankuPage{
+    background-color: white;
+    height: 500px;
+    width:700px;
+    padding:10px;
+    margin: 10px; 
 }
