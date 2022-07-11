@@ -84,6 +84,19 @@
     ],
     "projects": [
       {
+        "name": "Loan Application Form",
+        "sourceCodeUrl": "https://github.com/Lakshmivishwakarma/loan_application",
+        "liveURL": "https://lakshmivishwakarma.github.io/Lakshmivishwakarma.io/loan_application/",
+        "technologies": [
+          "Javascript",
+          "HTML",
+          "CSS" 
+        ],
+        "features": [
+          "Created as an assignment for a company", "Captcha validation and OTP validation for forms"
+        ]
+      },
+      {
         "name": "Restaurant Website",
         "sourceCodeUrl": "https://github.com/Lakshmivishwakarma/coursera-assignments/tree/main/restaurant",
         "liveURL": "https://lakshmivishwakarma.github.io/Lakshmivishwakarma.io/restaurant/index.html",
