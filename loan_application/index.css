@@ -15,7 +15,7 @@ body{
 }
 #main_content{
     background-color: white;
-    height: 500px;
+    height: 600px;
     width:700px;
     padding:10px;
     margin: 10px;
@@ -34,4 +34,19 @@ background-color:rgb(97, 176, 179);
     width:700px;
     padding:10px;
     margin: 10px; 
+}
+.inputValidation{
+color:#f32929;
+font-size: small;
+display:none;
+}
+#words{
+    margin:20 px;
+    font-size: small;
+    color:rgb(88, 41, 241);
+}
+#inwords{
+    font-size: smaller;
+    font-style: italic;
+   
 }

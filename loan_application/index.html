@@ -19,30 +19,34 @@
         <form name="stud_form" id="form" action="./thank_you.html" onsubmit="return validateForm()" method="get">
 
             <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" onblur="validateName()"><br><br>
+            <input type="text" id="name" name="name" onblur="validateName()"><br>
+            <span id="nameValidation" class="inputValidation"></span></br></br>
            
 
             <label for="email">Email:</label>
-            <input type="text" id="email" name="email" onblur="validateEmail()"><br><br>
-            
+            <input type="text" id="email" name="email" onblur="validateEmail()"><br>
+            <span id="emailValidation" class="inputValidation"></span></br></br>
 
             <label for="pan">PAN Number:</label>
-            <input type="text" id="pan" name="pan" onblur="validatePan()"><br /><br />
-           
+            <input type="text" id="pan" name="pan" onblur="validatePan()"><br/>
+            <span id="panValidation" class="inputValidation"></span></br></br>
 
             <label for="loanAmount">Loan Amount:</label>
-            <input type="number" id="loan_amount" name="loan_amount" onblur="validateLoanAmount()"><br><br>
-           
+            <input type="number" id="loan_amount" name="loan_amount" onblur="validateLoanAmount()" onkeyup ="convertNumToWord()" > <div id="inwords">In words :-<span id="words"> </span></div></br>
+            <span id="loanAmountValidation" class="inputValidation"></span></br></br>
 
             <div id="captcha">
                 <label for="captcha">captcha:</label>
+
                 <span id="firstNumber"></span>+<span id="secondNumber"></span>
                 <input type="text" id="captchaAnswer">
-               <button type="button" id = refreshCaptcha onclick="newCaptcha();" >Refresh</button>
-
+               <button type="button" id = refreshCaptcha onclick="newCaptcha();" >Refresh</button></br>
+               <span id="captchaValidation" class="inputValidation"></span>
             </div></br>
+            
 
-            <input type="submit" value="Submit" id="submitButton"><br />
+            <input type="submit" value="Submit" id="submitButton">
+            
 
 
         </form>
