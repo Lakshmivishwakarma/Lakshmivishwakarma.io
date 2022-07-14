@@ -226,13 +226,20 @@ function toWords(num) {
   // appending 000000000 to the original numbers
   let str = ("000000000" + num).slice(-9);
   let n = str.match(/^(\d{2})(\d{2})(\d{2})(\d{1})(\d{2})$/);
-  console.log(n);
   str = (n[1] != 0) ? (a[parseInt(n[1])] || b[parseInt(n[1][0])] + a[parseInt(n[1][1])]) + 'crore ' : '';
-  str += (n[2] != 0) ? (a[parseInt(n[2])] || b[parseInt(n[2][0])] + a[parseInt(n[2][1])]) + ' lakh ' : "";
-  str += (n[3] != 0) ? (a[parseInt(n[3])] || b[parseInt(n[3][0])] + a[parseInt(n[3][1])]) + 'Thousand ' : "";
-  str += (n[4] != 0) ? (a[parseInt(n[4])]) + ' hundred ' : "";
-  str += (n[5] != 0) ? ((str != '') ? 'and ' : '') +(a[parseInt(n[5])] || b[parseInt(n[5][0])] + a[parseInt(n[5][1])]) : "";
+  str += (n[2] != 0) ? (addAnd(n, 3) ? ' and ' : '') + (a[parseInt(n[2])] || b[parseInt(n[2][0])] + a[parseInt(n[2][1])]) + ' lakh ' : "";
+  str += (n[3] != 0) ? (addAnd(n, 4) ? ' and ' : '') + (a[parseInt(n[3])] || b[parseInt(n[3][0])] + a[parseInt(n[3][1])]) + 'Thousand ' : "";
+  str += (n[4] != 0) ? (addAnd(n, 5) ? ' and ' : '') + (a[parseInt(n[4])]) + ' hundred ' : "";
+  str += (n[5] != 0) ? ((str != '') ? 'and ' : '') + (a[parseInt(n[5])] || b[parseInt(n[5][0])] + a[parseInt(n[5][1])]) : "";
 
   inWords = str ? str + " Rs. only " : '';
   return inWords.toUpperCase();
+}
+// function to combining remaining array to check if it is 0 add "and" 
+function addAnd(arr, startIndex) {
+
+  let remainingDigits = arr.slice(startIndex).join('');
+  if (remainingDigits == 0) {
+    return true;
+  } else return false;
 }
